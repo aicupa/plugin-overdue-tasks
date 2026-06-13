@@ -3,5 +3,8 @@
   "version": "1.0.3",
   "description": "Show tasks not done within 48 hours",
   "view": "./view",
-  "main": "./service"
+  "main": "./service",
+  "dependencies": {
+    "@aicupa/api": "^1.0.1"
+  }
 }
