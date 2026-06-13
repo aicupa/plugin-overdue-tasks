@@ -1,6 +1,6 @@
 {
   "name": "@aicupa/plugin-overdue-tasks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Show tasks not done within 48 hours",
   "view": "./view",
   "main": "./service"
