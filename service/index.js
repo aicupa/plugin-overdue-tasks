@@ -1,5 +1,3 @@
-const { createPlugin } = require("@aicupa/api");
-
 const HOURS_48 = 48 * 60 * 60 * 1000;
 
 function collectOverdue(nodes, results) {
@@ -23,7 +21,11 @@ function collectOverdue(nodes, results) {
   }
 }
 
-module.exports = createPlugin((api) => {
+/**
+ * @param {import('@aicupa/api').PluginApi} api
+ * @returns {import('@aicupa/api').Plugin}
+ */
+module.exports = (api) => {
   return {
     async getOverdueTasks(params) {
       const { filePath } = params;
@@ -39,4 +41,4 @@ module.exports = createPlugin((api) => {
       return { tasks: results };
     },
   };
-});
+};

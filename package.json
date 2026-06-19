@@ -4,7 +4,7 @@
   "description": "Show tasks not done within 48 hours",
   "view": "./view",
   "main": "./service",
-  "dependencies": {
-    "@aicupa/api": "^1.0.1"
+  "devDependencies": {
+    "@aicupa/api": "^1.0.2"
   }
 }
